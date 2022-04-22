@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/KerrodY/LoL-Statistics#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3"
   }
 }
