@@ -6,8 +6,8 @@ const app = express()
 const port = process.env.PORT
 const apiKey = process.env.RIOT_API_KEY
 
-app.get('summoner/:accountName', (req, res) => {
-  
+app.get('/summoner/:accountName', (req, res) => {
+  console.log("called")
   // Make a request for a user with a given ID
   axios.get(`https://oc1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${req.params.accountName}?api_key=${apiKey}`)
     .then(function (response) {
